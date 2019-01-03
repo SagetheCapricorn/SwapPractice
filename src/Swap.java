@@ -10,7 +10,7 @@ public class Swap {
         boolean confirm = false;
         while(confirm != true){
             confirm = true;
-            for(int i=0; i <arr.length;i++){
+            for(int i=0; i <arr.length-1;i++){
                 if(arr[i] < arr[i+1]){
                 }
                 if(arr[i] > arr[i+1]){
