@@ -20,4 +20,18 @@ public class Swap {
             }
         }
     }
+    public static boolean checkSum(int [] before,int []after){
+        int w = 0;
+        for(int i =0 ; i < before.length;i++){
+            w += before[i];
+        }
+        int z = 0;
+        for(int n = 0; n < after.length;n++){
+            z += after[n];
+        }
+        if (w != z){
+            return false;
+        }
+        return true;
+    }
 }
