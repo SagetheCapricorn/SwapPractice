@@ -1,3 +1,5 @@
+import sun.font.TrueTypeFont;
+
 public class Swap {
     public static void swap(int[]arr,int i, int j){
         int a = arr[j];
@@ -33,5 +35,14 @@ public class Swap {
             return false;
         }
         return true;
+    }
+    public static boolean sortCheck(int [] arr){
+        boolean inOrder = true;
+        for (int i = 0; i < arr.length; i ++){
+            if( arr[i] > arr[i+1]){
+                inOrder = false;
+            }
+            return inOrder;
+        }
     }
 }
