@@ -42,7 +42,7 @@ public class Swap {
             if( arr[i] > arr[i+1]){
                 inOrder = false;
             }
-            return inOrder;
         }
+        return inOrder;
     }
 }
